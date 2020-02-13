@@ -1,5 +1,6 @@
 import React from 'react'
 import VideoItem from './videoItems';
+import './VideoItem.css'
 
 const VideoList = ({videos, onVideoSelect}) => {
 
@@ -7,7 +8,7 @@ const VideoList = ({videos, onVideoSelect}) => {
         return <VideoItem key={video.id.videoId} onVideoSelect ={onVideoSelect} video = {video} />;
     });
 
-    return <div className="ui relaxed divided list">{renderedList}</div>;
+    return <div className="video-list ui relaxed divided list">{renderedList}</div>;
 
 };
 
